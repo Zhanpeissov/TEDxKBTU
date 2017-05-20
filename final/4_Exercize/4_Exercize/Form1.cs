@@ -15,8 +15,8 @@ namespace _4_Exercize
     {
         Graphics g; 
         bool mouse_clicked = false;
-        int x;
-        int y;
+        int x=0;
+        int y=0;
 
         public Form1()
         {
@@ -29,10 +29,10 @@ namespace _4_Exercize
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawEllipse(new Pen(Color.Red), 250, y, 15, 15);
-            e.Graphics.DrawEllipse(new Pen(Color.Red), 30, y, 15, 15);
-            e.Graphics.DrawEllipse(new Pen(Color.Red), 150, y, 15, 15);
-            e.Graphics.DrawEllipse(new Pen(Color.Red), 190, y, 15, 15);
+            e.Graphics.DrawEllipse(new Pen(Color.Red), 250+x, 250+y, 15, 15);
+            e.Graphics.DrawEllipse(new Pen(Color.Red), 30+x, 20+y, 15, 15);
+            e.Graphics.DrawEllipse(new Pen(Color.Red), 150+x, 180+y, 15, 15);
+            e.Graphics.DrawEllipse(new Pen(Color.Red), 190+x, 90+y, 15, 15);
 
 
 
@@ -44,9 +44,14 @@ namespace _4_Exercize
         }
 
         private void timer1_Tick(object sender, EventArgs e)
-        { if (mouse_clicked == true)
+        {
             {
-                y--;
+                y++;
+                if (y == 500)
+                {
+                    y = 0;
+
+                }
                 Refresh();
 
             }
