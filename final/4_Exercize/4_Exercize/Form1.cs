@@ -45,7 +45,7 @@ namespace _4_Exercize
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            {
+            if (mouse_clicked = true) { 
                 y++;
                 if (y == 500)
                 {
