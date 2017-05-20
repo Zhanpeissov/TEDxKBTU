@@ -17,10 +17,10 @@ namespace _3_Exercize
         bool button1_MouseClik = false;
         bool button2_MouseClik = false;
         bool button3_MouseClik = false;
+        string i;
         public Form1()
         {
-            InitializeComponent();
-            int i = 0;
+            InitializeComponent();    
             Button[] s = { button1, button2, button3 };
         }
 
@@ -33,12 +33,13 @@ namespace _3_Exercize
         private void timer1_Tick(object sender, EventArgs e)
         {
             while (true) {
-               
+                int i = 0;
+                i++;
                 if ((button3_MouseClik = true) ||
                     (button1_MouseClik = true) ||
                     (button2_MouseClik = true))
-                {   
-                    
+                {
+                   
                     for (int j = 0;  j<2; j++)
                     {
                         if (j == 0)
@@ -68,14 +69,21 @@ namespace _3_Exercize
 
         private void button_Click(object sender, EventArgs e)
         {
-
+            Button[] s = { button1, button2, button3 };
+            button1.Text = "Dark Red";
+            button2.Text = "Yellow";
+            button3.Text = "Blue";
         }
 
-        private void button3_MouseClick(object sender, MouseEventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
+       
+    }
+
+       
         
     }
-}
+
