@@ -14,22 +14,25 @@ namespace _4_Exercize
     public partial class Form1 : Form
     {
         Graphics g;
+        Bitmap bmp;
         bool mouse_clicked = false;
+        int x;
+        int y;
+
         public Form1()
         {
             InitializeComponent();
-            g = this.CreateGraphics();
-
+            Bitmap bmp = new Bitmap(pictureBox1.Width, pictureBox1.Height);
+            g = Graphics.FromImage(bmp);
+            
         }
         
 
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            e.Graphics.DrawEllipse(new Pen(Color.Red), 100, 250, 15, 15);
-            e.Graphics.DrawEllipse(new Pen(Color.Red), 250, 100, 15, 15);
-            e.Graphics.DrawEllipse(new Pen(Color.Red), 210, 170, 15, 15);
-            e.Graphics.DrawEllipse(new Pen(Color.Red), 90, 500, 15, 15);
+            e.Graphics.DrawEllipse(new Pen(Color.Red), x, y, 15, 15);
+            
 
 
         }
@@ -39,7 +42,13 @@ namespace _4_Exercize
         }
 
         private void timer1_Tick(object sender, EventArgs e)
-        {
+        { if (mouse_clicked== true)
+            {
+                
+
+
+
+            }
 
         }
     }
