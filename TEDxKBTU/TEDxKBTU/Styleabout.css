@@ -17,18 +17,7 @@ letter-spacing: 4px;
 
             padding-top: 15px;
         }
-        .glyphicon-thumbs-up{
-            padding-left: 100px;
-            padding-top: 50px;
-            color: #f41e1e;
-        }
-        .glyphicon-globe{
-            padding-top:50px;
-            padding-left:70px;
-        }
-        #about{
-            padding: 30px 50px;
-        }
+
         h2 {
             font-size: 24px;
             text-transform: uppercase;
@@ -74,10 +63,6 @@ letter-spacing: 4px;
             background-color: #000000;
         }
 
-        .logo-small {
-            color: #f41e1e;
-            font-size: 50px;
-        }
 
         .logo {
             color: #f41e1e;
@@ -110,52 +95,6 @@ letter-spacing: 4px;
         .item span {
             font-style: normal;
         }
-
-        .panel {
-            border: 1px solid #f41e1e;
-            border-radius: 0 !important;
-            transition: box-shadow 0.5s;
-        }
-
-            .panel:hover {
-                box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-            }
-
-        .panel-footer .btn:hover {
-            border: 1px solid #f41e1e;
-            background-color: #fff !important;
-            color:#f41e1e;
-        }
-
-        .panel-heading {
-            color: #fff !important;
-            background-color:#f41e1e !important;
-            padding: 25px;
-            border-bottom: 1px solid transparent;
-            border-top-left-radius: 0px;
-            border-top-right-radius: 0px;
-            border-bottom-left-radius: 0px;
-            border-bottom-right-radius: 0px;
-        }
-
-        .panel-footer {
-            background-color: white !important;
-        }
-
-            .panel-footer h3 {
-                font-size: 32px;
-            }
-
-            .panel-footer h4 {
-                color: #aaa;
-                font-size: 14px;
-            }
-
-            .panel-footer .btn {
-                margin: 15px 0;
-                background-color: #f41e1e;
-                color: #fff;
-            }
 
         .navbar {
             margin-bottom: 0;
@@ -231,10 +170,9 @@ letter-spacing: 4px;
 
 
 
-
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
+    width: 100%; 
+    padding: 12px; 
     border: 1px solid #ccc;
     border-radius: 4px; 
     box-sizing: border-box;
@@ -252,14 +190,39 @@ input[type=submit] {
     cursor: pointer;
 }
 
-
 input[type=submit]:hover {
     background-color: #45a049;
 }
-
 
 .container2 {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+}
+
+
+.btn{
+        border: 1px solid #f41e1e;
+    font-family: Montserrat, sans-serif;
+    background-color:white;
+    color:black;
+}
+
+.btn:hover{
+        border: 1px solid #f41e1e;
+    font-family: Montserrat, sans-serif;
+    background-color:black;
+    color:white;
+}
+
+.btn:focus, .btn:hover{
+        border: 1px solid #f41e1e;
+    font-family: Montserrat, sans-serif;
+    background-color:black;
+    color:white;
+}{
+        border: 1px solid #f41e1e;
+    font-family: Montserrat, sans-serif;
+    background-color:black;
+    color:red;
 }

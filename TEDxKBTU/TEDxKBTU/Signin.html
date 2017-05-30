@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Theme Company Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Signin.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#myPage">TEDxKBTU</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Main.html">Main</a></li>
+
+                    <li><a href="Aboutus.html">About us</a></li>
+
+                    <li><a href="Signin.html" class="acc">Account</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <h1 id="HeaderTed">TEDxKBTU</h1>
+        <p id="forheaderted">SHOW YOUR AMBITIONS</p>
+        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <h4>"Learn from yesterday, live for today, hope for tomorrow. The important thing is not to stop questioning."<br><span>Albert Einstein</span></h4>
+                </div>
+                <div class="item">
+                    <h4>"All our dreams can come true if we have the courage to pursue them."<br><span>Walt Disney</span></h4>
+                </div>
+                <div class="item">
+                    <h4>"Success is walking from failure to failure with no loss of enthusiasm."<br><span>Winston Churchill</span></h4>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div id="container">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="email" required>Email:</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="mail" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd" required>Password:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="remem"> Remember me</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default" id="in">Sign in</button>
+                </div>
+            </div>
+        </form>
+        <h1 id="da">Don't have an account?</h1>
+        <button id="callModal" type="submit" class="callModal btn btn-default">Sign up</button>
+        <div class="modal" id="myFirstModal">
+            <form class="modal__form animate">
+                <span id="closeButton" class="glyphicon glyphicon-remove"></span>
+                <h2>Registration</h2>
+                <input type="text" name="" placeholder="Enter email" required id="email">
+                <input type="text" name="" placeholder="Enter login" required>
+                <input type="text" name="" placeholder="Entor phone" required>
+                <input type="password" name="" placeholder="Enter password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                <input id="pass" type="password" name="" placeholder="Confirm password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                <button id="reg">Register</button>
+                <ul id="list"></ul>
+            </form>
+        </div>
+    </div>
+        <div id="contact" class="container-fluid bg-grey">
+            <h2 class="text-center">CONTACT</h2>
+            <form action="/action_page.php">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <input type="text" id="coun" name="country" placeholder="Your country..">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+                <div>
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Almaty, KZ</p>
+                    <p><span class="glyphicon glyphicon-phone"></span> +7 777 584 63 88</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span> email@mail.com</p>
+                </div>
+            </form>
+        </div>
+    
+    <script src="Myjs.js"></script>
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+    </footer>
+
+
+</body>
+</html>
